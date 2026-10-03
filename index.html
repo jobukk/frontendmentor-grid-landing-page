@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Grid landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      color: hsl(0, 0%, 100%);
+      background-color: hsl(228, 99%, 58%);
+      margin: 0 auto;
+    }
+    p{
+      font-size: 17px;
+    }
+
+    .hero-section{
+      margin: 100px 0;
+      width: 750px;
+    }
+
+    .hero-section>div{
+      align-items: center;
+      padding: 20px;
+      width: 250px;
+      
+    }
+
+    .nav-bar, .footer{
+      display: grid;
+      grid-template-columns: auto auto;
+      align-items: center;
+      padding: 15px;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+    
+    .icon>h1{
+      display: inline;
+    }
+
+    .parent-container{
+      display: grid;
+      grid-template-columns: auto auto;
+      border-top: 0.5px solid hsl(224, 100%, 95%);
+      border-bottom: 0.5px solid hsl(224, 100%, 95%);
+    }
+
+    .stats-section{
+      display: grid;
+      grid-template-columns: auto auto;
+      width: fit-content;      
+    }
+
+    .stats-section > div{
+      border: 0.5px solid hsl(224, 100%, 95%);
+      align-items: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    .assets-grid{
+      display: grid;
+      grid-template-columns: auto auto;
+      align-items: center;
+    }
+
+
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav-bar">
+    <div class="icon">
+    <img src="./assets/images/favicon-32x32.png" alt="" width="20px" height="20px">
+    <h1>Bridge Collective</h1> 
+    </div>
+    <img src="./assets/images/icon-menu.svg" alt="">
+  </nav>   
+  <div class="parent-container">
+  <!-- Hero -->
+  <div class="hero-section">
+    <div>
+      <h1>A classroom for every child.</h1>
+      <p>We fund the schools, train the teachers, and measure what works — so every child we reach today becomes a graduate tomorrow.</p>
+    </div>
+  </div> 
+
+  <!-- Stats -->
+  <div class="stats-section">
+    <div>
+      <div class="assets-grid">
+        <img src="./assets/images/icon-sparkle.svg" alt="">
+        <h2>2.4M</h2>
+      </div>
+      
+      <h3>Students reached</h3>
+      <p>Across 31 countries since 2011.</p>
+    </div>
+
+    <div>
+      <div class="assets-grid">
+      <img src="./assets/images/icon-plus.svg" alt="">
+      <h2>1,284</h2>
+      </div>
+      <h3>Schools partnered</h3>
+      <p>In 14 countries, from Kenya to Guatemala.</p>
+    </div>
+
+    <div>
+      <div class="assets-grid">
+      <img src="./assets/images/icon-arrow-right.svg" alt="">
+      <h2>38K</h2>
+      </div>
+      <h3>Teachers trained</h3>
+      <p>Equipped with modern tools and methodology.</p>
+    </div>
+
+    <div>
+      <div class="assets-grid">
+      <img src="./assets/images/icon-trending-up.svg" alt="">
+      <h2>3.1×</h2>
+      </div>
+      <h3>Graduation lift</h3>
+      <p>Partner schools outperform national averages 3x.</p>
+    </div>
+
+  </div>
+  </div>
+  <!-- Footer -->
+  <footer class="footer">
+  <p>© 2026 Bridge Collective</p>
+  <p>Registered charity 12345678</p>
+  </footer>
+
+  <!-- Menu panel — hidden until the hamburger is activated -->
+  <!-- About
+  Our Work
+  Partners
+  Annual Report
+  Donate -->
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
